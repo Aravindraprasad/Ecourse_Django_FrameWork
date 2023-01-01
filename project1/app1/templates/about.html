@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>HTML and CSS Course - Course Detail Page</title>
+    <meta name="description" content="Learn the fundamentals of HTML and CSS in this beginner-level course.">
+    <meta name="keywords" content="HTML, CSS, course, web development">
+    <style>
+      /* Add some styles for the page */
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        color: #00b8d4;
+      }
+      p {
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .container > div {
+        flex: 1;
+        padding: 20px;
+      }
+      .container > div:first-of-type {
+        flex: 2;
+      }
+      .container > div:nth-of-type(2) {
+        flex: 3;
+      }
+      .container > div:last-of-type {
+        flex: 1;
+      }
+      .description {
+        font-style: italic;
+        color: #666;
+      }
+      .schedule {
+        background-color: #eee;
+        padding: 20px;
+      }
+      .schedule h3 {
+        margin-top: 0;
+      }
+      .schedule ul {
+        list-style: none;
+        padding: 0;
+      }
+      .schedule li {
+        display: flex;
+        justify-content: space-between;
+      }
+      .instructor {
+        text-align: center;
+      }
+      .instructor img {
+        border-radius: 50%;
+        width: 200px;
+      }
+      .instructor h3 {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML and CSS Course</h1>
+    <p class="description">Learn the fundamentals of HTML and CSS in this beginner-level course.</p>
+    <div class="container">
+      <div class="description">
+        <h2>Course Details</h2>
+        <ul>
+          <li>Duration: 4 weeks</li>
+          <li>Location: Online</li>
+          <li>Level: Beginner</li>
+        </ul>
+      </div>
+      <div class="schedule">
+        <h3>Schedule</h3>
+        <ul>
+          <li>Week 1: Introduction to HTML</li>
+          <li>Week 2: HTML elements and structure</li>
+          <li>Week 3: Introduction to CSS</li>
+          <li>Week 4: CSS styling and layout</li>
+        </ul>
+      </div>
+      <div class="instructor">
+        <img src="instructor.jpg" alt="Instructor">
+        <h3>Instructor</h3>
+        <p>John Doe has been a web developer for over 10 years and has a passion for teaching
